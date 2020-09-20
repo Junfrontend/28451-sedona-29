@@ -1,0 +1,114 @@
+:root {
+  --basic-grey: #888888;
+  --basic-black: #000000;
+  --basic-white: #ffffff;
+  --basic-blue: #81B3D2;
+  --basic-brown: #766357;
+  --basic-light-grey: #F2F2F2;
+  --basic-brown-focus: #604E43;
+  --basic-brown-action: #503E33;
+  --basic-blue-focus:#669EC0;
+  --basic-blue-action:#5496BD;
+}
+.page-body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+
+}
+a {
+  text-decoration: none;
+}
+ img {
+   max-width: 100%;
+   height: auto;
+ }
+ .main-navigation {
+   background-color: var(--basic-white);
+   font-weight: 700;
+   line-height: 26px;
+   text-align: center;
+}
+.site-navigation {
+  list-style: none;
+}
+.site-navigation a {
+  color: var(--basic-black);
+}
+.site-navigation a:hover,
+.site-navigation a:focus,
+.finded-place h2:hover,
+.finded-place h2:focus {
+  color: var(--basic-blue)
+}
+.site-navigation:active,
+.finded-place h2:active {
+  opacity: 0.3;
+}
+.feature-list {
+  list-style: none;
+}
+.feature-list h3,
+.finded-place h2 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+}
+.feature-item {
+  text-align: center;
+
+}
+.feature-item p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.with-pic {
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+}
+.searching-form {
+  text-align: center;
+}
+.footer {
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+.contacts {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+.htmlacademy-link {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+}
+.htmlacademy-link:hover,
+.htmlacademy-link:focus {
+  color: var(--basic-blue);
+}
+.htmlacademy-link:active {
+  color: #bdbbbc;
+}
+.social-link {
+  list-style: none;
+  color: var(--basic-blue);
+}
+.social-link:hover,
+.social-link:focus {
+  color: var(--basic-blue-focus);
+}
+.social-link:active {
+  color: var(--basic-blue-action)
+}
+/*Стили 2-ой страницы*/
+
