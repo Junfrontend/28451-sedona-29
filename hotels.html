@@ -22,55 +22,49 @@
     <div>
         <h1>Форма поиска отелей</h1>
         <form action="https://echo.htmlacademy.ru/courses" method="POST">
-        <fieldset>
+        <fieldset class="infrastructure">
             <legend>Инфраструктура:</legend>
-            <input type="checkbox" name="pool" id="pool-field">
-            <label for="pool-field">Бассейн</label>
-            <input type="checkbox" name="parking" id="parking-field">
-            <label for="parking-field">Парковка</label>
-            <input type="checkbox" name="wi-fi" id="wi-fi-field">
-            <label for="wi-fi-field">wi-fi</label>
+            <label> <input type="checkbox" name="pool"> Бассейн</label>
+            <label> <input type="checkbox" name="parking"> Парковка</label>
+            <label> <input type="checkbox" name="wi-fi"> wi-fi</label>
         </fieldset>
-        <fieldset>
+        <fieldset class="type-hotel">
             <legend>Тип жилья:</legend>
-            <input type="checkbox" name="hotel" id="hotel-field">
-            <label for="hotel-field">Гостиница</label>
-            <input type="checkbox" name="motel" id="motel-field">
-            <label for="motel-field">Мотель</label>
-            <input type="checkbox" name="apart" id="apart-field">
-            <label for="apart-field">Апартаменты</label>
+            <label> <input type="checkbox" name="hotel"> Гостиница</label>
+            <label> <input type="checkbox" name="motel"> Мотель</label>
+            <label> <input type="checkbox" name="apart"> Апартаменты</label>
         </fieldset>
         <label for="price-per-night">Стоимость в сутки (р):</label><br>
         <input type="range" min="0" max="5000" name="price-per-night" id="price-per-night">
         <output name="price-per-night-output"></output>
-        <input type="button" value="Показать">
+        <input class="show-button" type=" value="Показать">
         </form>
     </div>
 <div>
     <p>Найдено: 3</p>
     <p>Сортировка</p>
-    <input type="button" value="По цене">
-    <input type="button" value="По типу">
-    <input type="button" value="По рейтингу">
+    <button type="submit">По цене</button>
+    <button type="submit">По типу</button>
+    <button type="submit">По рейтингу</button>
 </div>
 <div class="finded-place">
 <section>
     <h2>Amara Resort & Spa</h2>
     <img src="https://via.placeholder.com/135x90" alt="Картинка отеля">
     <p>Гостиница</p>  <p>от 4000 р.</p>
-    <input type="button" value="Подробнее"> <input type="button" value="Забронировать"> <p>Рейтинг 8.5</p>
+    <input class="more-info" type="button" value="Подробнее"> <input class="book-it" type="button" value="Забронировать"> <p>Рейтинг 8.5</p>
 </section>
 <section>
     <h2>Desert Quail Inn</h2>
     <img src="https://via.placeholder.com/135x90" alt="Картинка отеля">
     <p>Мотель</p>  <p>
-    <input type="button" value="Подробнее"> <input type="button" value="Забронировать"> <p>Рейтинг 8.9</p>
+    <input class="more-info" type="button" value="Подробнее"> <input class="book-it" type="button" value="Забронировать"> <p>Рейтинг 8.9</p>
 </section>
 <section>
     <h2>Villas at Poco Diablo</h2>
     <img src="https://via.placeholder.com/135x90" alt="Картинка отеля">
     <p>Апартаменты</p>  <p>от 2000 р.</p>
-    <input type="button" value="Подробнее"> <input type="button" value="Забронировать"> <p>Рейтинг 9.2</p>
+    <input class="more-info" type="button" value="Подробнее"> <input class="book-it" type="button" value="Забронировать"> <p>Рейтинг 9.2</p>
 </section>
 </div>
 <footer class="footer">
