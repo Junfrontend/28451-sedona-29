@@ -101,7 +101,10 @@ a {
 }
 .social-link {
   list-style: none;
-  color: var(--basic-blue);
+}
+.social-link img {
+  background-color: var(--basic-blue);
+  padding: 5px;
 }
 .social-link:hover,
 .social-link:focus {
@@ -112,13 +115,16 @@ a {
 }
 /*Стили 2-ой страницы*/
 
+.main-search {
+  background: url("../img/background-photo.jpg") no-repeat;
+}
 .infrastructure {
   border: none;
 }
-.type-hotel{
+.type-hotel {
   border: none;
 }
-.show-button{
+.show-button {
   border: 2px solid #FFFFFF;
   width: 137px;
   height: 36px;
@@ -211,3 +217,13 @@ a {
   color: #666666;
   text-align: center;
 }
+.welcome {
+  position: absolute;
+  left: 370px;
+  top: 300px;
+}
+.white-shape {
+  position: relative;
+  top: -70px;
+}
+
