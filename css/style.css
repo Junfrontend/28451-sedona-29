@@ -37,6 +37,10 @@ a {
    background-color: var(--basic-white);
    font-weight: 700;
    line-height: 26px;
+   height: 56px;
+}
+.main-header-logo {
+  z-index: 1;
 }
 .site-navigation {
   display: flex;
@@ -103,13 +107,12 @@ a {
   line-height: 21px;
   display: flex;
   align-items: center;
+  text-align: center;
 }
 .feature-item-2 p {
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  display: flex;
-  align-items: center;
 }
 .small-feature-2 h3 {
   font-size: 21px;
@@ -118,6 +121,7 @@ a {
 }
 .intro {
  text-align: center;
+ line-height: 26px;
 }
 .small-feature {
   display: flex;
@@ -137,16 +141,6 @@ a {
   margin: 0;
   padding: 0;
   background-color: var(--basic-light-grey);
-}
-.feature-item-2 {
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .with-pic {
@@ -171,6 +165,8 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  width: 400px;
 }
 .searching-form {
   text-align: center;
@@ -373,10 +369,9 @@ a {
 .white-shape {
   width: 100%;
   height: 57px;
-  overflow: auto;
   margin: auto;
   position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
+  top: 475px; left: 0; bottom: 0; right: 0;
 }
 .sort-form {
   display: flex;
@@ -386,3 +381,7 @@ a {
   margin-left: 10px;
 }
 
+.center h1,
+.hidden{
+  display: none;
+}
