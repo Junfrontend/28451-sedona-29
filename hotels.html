@@ -25,26 +25,46 @@
     </header>
     <main class="main-content">
       <div>
-        <h1>Форма поиска отелей</h1>
+        <h1 class="hidden">Форма поиска отелей</h1>
         <form action="https://echo.htmlacademy.ru/courses" method="POST" class="main-search">
-          <fieldset class="infrastructure">
-            <legend class="search-form-head">Инфраструктура:</legend>
-            <label> <input type="checkbox" name="pool"> Бассейн</label>
-            <label> <input type="checkbox" name="parking"> Парковка</label>
-            <label> <input type="checkbox" name="wi-fi"> wi-fi</label>
+          <fieldset class="fieldset-style">
+            <div class="infrastructure">
+              <legend class="search-form-head">Инфраструктура:</legend>
+              <label> <input class="checkbox" type="checkbox" name="pool"> Бассейн</label>
+              <label> <input class="checkbox" type="checkbox" name="parking"> Парковка</label>
+              <label> <input class="checkbox" type="checkbox" name="wi-fi"> wi-fi</label>
+            </div>
           </fieldset>
-          <fieldset class="type-hotel">
-            <legend class="search-form-head">Тип жилья:</legend>
-            <label> <input type="checkbox" name="hotel"> Гостиница</label>
-            <label> <input type="checkbox" name="motel"> Мотель</label>
-            <label> <input type="checkbox" name="apart"> Апартаменты</label>
+          <fieldset class="fieldset-style">
+            <div class="infrastructure">
+              <legend class="search-form-head">Тип жилья:</legend>
+              <label> <input type="checkbox" name="hotel"> Гостиница</label>
+              <label> <input type="checkbox" name="motel"> Мотель</label>
+              <label> <input type="checkbox" name="apart"> Апартаменты</label>
+           </div>
           </fieldset>
-          <div>
-            <label class="search-form-head" for="price-per-night">Стоимость в сутки (р):</label><br>
-            <input type="range" min="0" max="5000" name="price-per-night" id="price-per-night">
-            <output name="price-per-night-output"></output>
-            <input class="show-button" type="submit" value="Показать">
-          </div>
+          <fieldset class="filter-item">
+            <legend>Стоимость в сутки (Р):</legend>
+            <div class="custom-range">
+              <div class="price-controls">
+                <label class="min-price">
+                  от <input type="number" name="min-prace" value="0">
+                </label>
+                <label class="max-price">
+                  до <input type="number" name="max-price" value="3000">
+                </label>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar">
+
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+              </div>
+            </div>
+        </fieldset>
         </form>
     </div>
 <div class="sort-form">
@@ -60,7 +80,7 @@
     <div>
       <h2>Amara Resort & Spa</h2>
       <p class="short-description">Гостиница</p>  <p class="short-description">от 4000 р.</p>
-      <input class="more-info" type="button" value="Подробнее"> <input class="book-it" type="button" value="Забронировать"> <p class="rating">Рейтинг: 8,5</p>
+      <div class="hotel-decor"><input class="more-info" type="button" value="Подробнее"> <input class="book-it" type="button" value="Забронировать"> <p class="rating">Рейтинг: 8,5</p></div>
     </div>
   </section>
   <section class="find-hotels">
@@ -68,7 +88,7 @@
     <div>
       <h2>Desert Quail Inn</h2>
       <p class="short-description">Мотель</p>  <p class="short-description">от 3000 р.</p>
-      <input class="more-info" type="button" value="Подробнее"> <input class="book-it" type="button" value="Забронировать"> <p class="rating">Рейтинг: 8,9</p>
+      <div class="hotel-decor"><input class="more-info" type="button" value="Подробнее"> <input class="book-it" type="button" value="Забронировать"> <p class="rating">Рейтинг: 8,9</p></div>
     </div>
   </section>
   <section class="find-hotels">
@@ -76,7 +96,7 @@
     <div>
       <h2>Villas at Poco Diablo</h2>
       <p class="short-description">Апартаменты</p>  <p class="short-description">от 2000 р.</p>
-      <input class="more-info" type="button" value="Подробнее"> <input class="book-it" type="button" value="Забронировать"> <p class="rating">Рейтинг: 9,2</p>
+      <div class="hotel-decor"><input class="more-info" type="button" value="Подробнее"> <input class="book-it" type="button" value="Забронировать"> <p class="rating">Рейтинг: 9,2</p></div>
     </div>
   </section>
 </div>

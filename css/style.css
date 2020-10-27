@@ -72,11 +72,14 @@ a {
 .finded-place h2:focus {
   color: var(--basic-blue)
 }
+
 .finded-place {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  border-collapse: collapse;
 }
+
 .find-hotels {
   display: flex;
 }
@@ -238,7 +241,7 @@ a {
 /*Стили 2-ой страницы*/
 
 .main-search {
-  background: url("../img/background-photo.jpg") no-repeat;
+  background: url("../img/background-2.jpg") no-repeat;
   width: auto;
   height: 217px;
   display: flex;
@@ -246,13 +249,9 @@ a {
   align-items: center;
 }
 
-.infrastructure {
+.fieldset-style {
   color: var(--basic-white);
   border: none;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  margin-left: 72px;
 }
 .type-hotel {
   border: none;
@@ -325,6 +324,9 @@ a {
 }
 .search-form-head{
   font-weight: 700;
+  margin-bottom: 25px;
+
+
 }
 
 .sort-form-header {
@@ -371,7 +373,7 @@ a {
   height: 57px;
   margin: auto;
   position: absolute;
-  top: 475px; left: 0; bottom: 0; right: 0;
+  top: 415px; left: 0; bottom: 0; right: 0;
 }
 .sort-form {
   display: flex;
@@ -385,3 +387,78 @@ a {
 .hidden{
   display: none;
 }
+.infrastructure {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  outline: 5px solid red;
+  width: 150px;
+  margin-left: 72px;
+  font-size: 14px;
+  line-height: 21px;
+}
+.main-search {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+}
+.filter-item {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--basic-white);
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.price-controls {
+  font-weight: normal;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 2px;
+  width: 317px;
+  height: 36px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+
+
+}
+.price-controls input {
+  border: none;
+  background: none;
+  color: var(--basic-white);
+  width: 50px;
+}
+.range-controls {
+  width: 317px;
+  height: 30px;
+  margin-top: 20px;
+}
+
+.bar {
+  width: 70%;
+  height: 2px;
+  background-color: var(--basic-white);
+}
+.scale {
+  width: 317px;
+  height: 2px;
+  background-color: var(--basic-grey);
+}
+.range-controls .toggle {
+  margin-top: 15px;
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border: 8px solid white;
+  border-radius: 50%;
+  background-color: var(--basic-grey);
+}
+.toggle-min {
+  position: relative;
+  left: 0px;
+  top: -10px;
+}
+
+
