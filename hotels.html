@@ -30,17 +30,17 @@
           <fieldset class="fieldset-style">
             <div class="infrastructure">
               <legend class="search-form-head">Инфраструктура:</legend>
-              <label> <input class="checkbox" type="checkbox" name="pool"> Бассейн</label>
-              <label> <input class="checkbox" type="checkbox" name="parking"> Парковка</label>
-              <label> <input class="checkbox" type="checkbox" name="wi-fi"> wi-fi</label>
+              <label class="check-parent"> <input class="checkbox" type="checkbox" name="pool"><span>Бассейн</span></label>
+              <label class="check-parent"> <input class="checkbox" type="checkbox" name="parking"><span>Парковка</span></label>
+              <label class="check-parent"> <input class="checkbox" type="checkbox" name="wi-fi"><span>wi-fi</span></label>
             </div>
           </fieldset>
           <fieldset class="fieldset-style">
-            <div class="infrastructure">
+            <div class="infrastructure type-living">
               <legend class="search-form-head">Тип жилья:</legend>
-              <label> <input type="checkbox" name="hotel"> Гостиница</label>
-              <label> <input type="checkbox" name="motel"> Мотель</label>
-              <label> <input type="checkbox" name="apart"> Апартаменты</label>
+              <label class="check-parent"> <input class="checkbox" type="checkbox" name="hotel"><span>Гостиница</span></label>
+              <label class="check-parent"> <input class="checkbox" type="checkbox" name="motel"><span>Мотель</span></label>
+              <label class="check-parent"> <input class="checkbox" type="checkbox" name="apart"><span>Апартаменты</span></label>
            </div>
           </fieldset>
           <fieldset class="filter-item">
@@ -50,6 +50,9 @@
                 <label class="min-price">
                   от <input type="number" name="min-prace" value="0">
                 </label>
+                <div class="small-bar">
+
+                </div>
                 <label class="max-price">
                   до <input type="number" name="max-price" value="3000">
                 </label>
@@ -64,44 +67,93 @@
                 </div>
               </div>
             </div>
+            <button type="submit" class="show-button">Показать</button>
         </fieldset>
         </form>
     </div>
 <div class="sort-form">
     <p class="sort-form-header">Найдено: 3</p>
-    <p class="sort-form-nothing">Сортировка</p>
+    <p class="sort-form-nothing">Сортировка:</p>
     <button class="sort-button" type="button">По цене</button>
     <button class="sort-button" type="button">По типу</button>
     <button class="sort-button" type="button">По рейтингу</button>
 </div>
 <div class="finded-place">
   <section class="find-hotels">
-    <img src="img/Amara-resort.png" width="135 " height="90 " alt="Картинка отеля">
-    <div>
+    <img src="img/Amara-resort.png" width="135" height="90" alt="Картинка отеля">
+    <div class="hotel-description">
       <h2>Amara Resort & Spa</h2>
-      <p class="short-description">Гостиница</p>  <p class="short-description">от 4000 р.</p>
-      <div class="hotel-decor"><input class="more-info" type="button" value="Подробнее"> <input class="book-it" type="button" value="Забронировать"> <p class="rating">Рейтинг: 8,5</p></div>
+      <div class="hotel-button">
+      <div class="hotel-decor">
+        <p class="short-description">Гостиница</p>
+        <input class="more-info" type="button" value="Подробнее">
+      </div>
+      <div class="hotel-decor reserved">
+        <p class="short-description">от 4000 р.</p>
+        <input class="book-it" type="button" value="Забронировать">
+      </div>
+      </div>
+    </div>
+    <div class="rating">
+      <div class="stars">
+        <img src="/img/star.svg" width="19" height="18" alt="Звезда отеля">
+        <img src="/img/star.svg" width="19" height="18" alt="Звезда отеля">
+        <img src="/img/star.svg" width="19" height="18" alt="Звезда отеля">
+        <img src="/img/star.svg" width="19" height="18" alt="Звезда отеля">
+      </div>
+      <p>Рейтинг: 8,5</p>
     </div>
   </section>
   <section class="find-hotels">
-    <img src="img/Desert-inn.png" width="135 " height="90 " alt="Картинка отеля">
-    <div>
+    <img src="img/Desert-inn.png" width="135" height="90" alt="Картинка отеля">
+    <div class="hotel-description">
       <h2>Desert Quail Inn</h2>
-      <p class="short-description">Мотель</p>  <p class="short-description">от 3000 р.</p>
-      <div class="hotel-decor"><input class="more-info" type="button" value="Подробнее"> <input class="book-it" type="button" value="Забронировать"> <p class="rating">Рейтинг: 8,9</p></div>
+      <div class="hotel-button">
+      <div class="hotel-decor">
+        <p class="short-description">Мотель</p>
+        <input class="more-info" type="button" value="Подробнее">
+      </div>
+      <div class="hotel-decor reserved">
+        <p class="short-description">от 3000 р.</p>
+        <input class="book-it" type="button" value="Забронировать">
+      </div>
+      </div>
+    </div>
+    <div class="rating">
+      <div class="stars">
+        <img src="/img/star.svg" width="19" height="18" alt="Звезда отеля">
+        <img src="/img/star.svg" width="19" height="18" alt="Звезда отеля">
+        <img src="/img/star.svg" width="19" height="18" alt="Звезда отеля">
+      </div>
+      <p>Рейтинг: 8,9</p>
     </div>
   </section>
   <section class="find-hotels">
-    <img src="img/Villass-poco.png" width="135 " height="90 " alt="Картинка отеля">
-    <div>
+    <img src="img/Villass-poco.png" width="135" height="90" alt="Картинка отеля">
+    <div class="hotel-description">
       <h2>Villas at Poco Diablo</h2>
-      <p class="short-description">Апартаменты</p>  <p class="short-description">от 2000 р.</p>
-      <div class="hotel-decor"><input class="more-info" type="button" value="Подробнее"> <input class="book-it" type="button" value="Забронировать"> <p class="rating">Рейтинг: 9,2</p></div>
+      <div class="hotel-button">
+        <div class="hotel-decor">
+          <p class="short-description">Апартаменты</p>
+          <input class="more-info" type="button" value="Подробнее">
+        </div>
+        <div class="hotel-decor reserved">
+          <p class="short-description">от 2000 р.</p>
+          <input class="book-it" type="button" value="Забронировать">
+        </div>
+      </div>
+    </div>
+    <div class="rating">
+      <div class="stars">
+        <img src="/img/star.svg" width="19" height="18" alt="Звезда отеля">
+        <img src="/img/star.svg" width="19" height="18" alt="Звезда отеля">
+      </div>
+      <p>Рейтинг: 9,2</p>
     </div>
   </section>
 </div>
 </main>
-<footer class="footer">
+<footer class=" footer-hotels">
   <div class="contacts">
     <p>#visitSEDONA</p>
     <p>ТЕЛ: +7(495) 666-01-66</p>
